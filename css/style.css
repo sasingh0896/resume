@@ -1,0 +1,292 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+    letter-spacing: 1px;
+}
+/*--------------------------------------------Header-------------------------------------------------------*/
+#header{
+      height: 200vh;
+      background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),
+      url('../img/black-laptop-beside-black-computer-mouse-inside-room-669996.jpg');
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      height:800px;     
+}
+.user-box{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.user-box img{
+    border-radius: 50%;
+    width: 270px;
+    border: 1px  #102027;
+    
+}
+.user-box h1{
+    color:#fdfcfc ;
+    font-weight:400 ;
+    margin: 10px;
+}
+.user-box h5{
+    color:#fcfaf7 ;
+    font-weight:400 ;
+    font-size: large;
+    margin: 10px;
+}
+
+.scroll-btn {
+    bottom: 30px;
+    position:absolute ;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #ffffff;
+    padding: 10px 10px 20px ;
+    border-radius: 20px;
+}
+.scroll-bar span{
+    border: 2px solid #ffffff;
+    font-size: 10px;
+    border-radius: 20px;
+}
+.scroll-bar{
+    animation: mover 1s infinite alternate;
+}
+@keyframes mover{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(10px);}
+}
+#user-info{
+    width: 1440px;
+    height: 100px;
+}
+/*----------------------------------NAV BAR--------------------------------*/
+#nav-bar{
+    top:0;
+    position: sticky;
+    z-index: 2;
+    height: 250px;
+    
+}
+.navbar{
+    background: transparent none repeat scroll 0 0;
+}
+.navbar-brand img{
+    height: 50px;
+    width: auto;
+}
+.nav-bar .fa-bars{
+    font-size: 35px;
+    color: #d7ccc8;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+.navbar-nav{
+    float: right;
+    text-align: right;
+}
+.nav-link{
+    color: #f4f8f4 !important;
+}
+
+/*---------------------About-Section--------------------*/
+.about{
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    color: #ffffff;
+    
+}
+#about span{
+    color: aqua;
+}
+
+.about h2{
+    text-align: center;
+    margin: 10px 10px 40px 10px;
+    color: rgb(224, 143, 44);
+}
+.about h4
+{
+    padding-right: 5px; 
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+.profile-img{
+    height: 450px;
+    width: 450px;
+    border: 1px solid #102027;   
+}
+.skill-bar p{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress{
+    border-radius: 16px !important;
+    margin-bottom: 10px;
+}
+.progress color1{
+    color: #3e3e3e;
+}
+
+/*------------------------------RESUME-SECTION------------------------------*/
+.resume{
+    background-color: #c5c5c5;
+}
+.single_experince{
+    background-color:rgb(44, 42, 42);
+    border-top: 5px solid rgb(174, 5, 163);
+    border-left: 5px solid rgb(114, 169, 5);
+    color: #fff;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+}
+.single_experince-heading{
+    border-bottom: 1px solid #cecece;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.pull-left{
+    color: rgb(216, 209, 209);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.pull-right{
+    color: #f5f2f0;
+    font-size: 17px;
+    float: right !important;
+}
+.resume{
+    padding: 60px;
+}
+.resume-title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-style: normal;
+}
+.resume-title span{
+    color: #e05e22;
+}
+.single_experince p{
+    margin-top: 10px;
+}
+
+/*-----------------------------------Contact-------------------------------------*/
+
+.contact_title{
+    margin-top:50px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font: bold;
+}
+.contact_title span{
+    color: #e29f0e;
+}
+.contact_title p{
+     font-weight: 400px;
+}
+
+.address-list{
+ margin-top: 30px;
+ padding: 30px;
+ border: 1px;
+ box-shadow: 0 0 5px 1px #cfd8dc;
+ background-color: rgb(247, 245, 243);
+}
+.address_list{
+    margin-top: 30px;
+    padding: 12px;
+    border: 1px;
+    box-shadow: 0 0 5px 1px #cfd8dc;
+    background-color: rgb(247, 245, 243);
+   }
+   
+.single_address {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.single_address i {
+    background: #3e3e3e none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    float: left;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 40px;
+}
+.contact_btn {
+    background-color: #ffcc1d;
+    padding: 10px;
+    box-shadow: 10px 10px 10px #c5c5c5;
+}
+ .contact_btn a :hover{
+    background-color: #1a4402;
+} 
+.single_address h4 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+.social_info h4 {
+    font-style: normal;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    
+}
+.social_info li{
+    display: inline-block;
+}
+
+.social_info li a {
+    background: #3e3e3e none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    text-align: center;
+    width: 40px;
+}
+li a:hover {
+    background-color: #e0ae09;
+  }
+
+  .map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    padding-top: 50px;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.footer{
+    background-color: #102027;
+    padding: 25px;
+}
+.footer-text{
+    color: #cfd8dc;
+    font-size: small;
+}
